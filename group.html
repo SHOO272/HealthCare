@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <title>HealthCare</title>
+    <style>
+        #group-members {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-main">
+
+            <div id="menu" class="fas fa-bars"></div>
+
+            <a href="#" class="logo">   HealthCare</a>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="service.html">Services</a>
+                <a href="group.html">Group</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <h2 style="text-align: center; margin-top: 50px;">Group members</h2>
+    <ul id="group-members" style="text-align: center;">
+
+        <li>شذى بدر الحربي</li>
+        <li>تهاني عواد العنزي</li>
+        <li>اريج سالم العطوي</li>
+
+    </ul>
+
+    <script>
+        function getRandomIndex(maxIndex) {
+            return Math.floor(Math.random() * maxIndex);
+        }
+
+        function displayGroupMembers() {
+            var groupMembersList = document.getElementById('group-members');
+            var members = groupMembersList.children;
+            var numMembers = members.length;
+
+            for (var i = numMembers - 1; i > 0; i--) {
+                var randomIndex = getRandomIndex(i + 1);
+                groupMembersList.appendChild(members[randomIndex]);
+            }
+        }
+
+        // Call the displayGroupMembers function initially to populate the list
+        displayGroupMembers();
+    </script>
+    <script src="js.js">
+    </script>
+</body>
+
+</html>

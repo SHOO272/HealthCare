@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 8rem 7%;
+}
+
+.section__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section__header {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: v#ffffff;
+    background-color: #0d846c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-image: url("assets/header.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-main {
+    background: #12ac8e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    position: relative;
+}
+
+.header-main .logo {
+    color: #f5f5f5;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.header-main .logo i {
+    padding-right: .5rem;
+    color: #f5f5f5;
+}
+
+.header-main .navbar a {
+    font-size: 1rem;
+    color: #f5f5f5;
+    margin: 0 1rem;
+}
+
+#menu {
+    font-size: 1rem;
+    border: .1rem solid #f5f5f5;
+    color: #f5f5f5;
+    border-radius: .5rem;
+    padding: .6rem 1.1rem;
+    cursor: pointer;
+    display: none;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.header__container h1 {
+    margin-bottom: 1rem;
+    max-width: 800px;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    color: #04372d;
+}
+
+.header__container p {
+    margin-bottom: 2rem;
+    max-width: 600px;
+    color: #04372d;
+}
+
+.service__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.service__header__content p {
+    max-width: 600px;
+    color: #767268;
+}
+
+.service__btn {
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: .1rem solid #12ac8e;
+    background: #12ac8e;
+    padding: 1.2rem 4.5rem;
+    overflow: hidden;
+    z-index: -1;
+    border-radius: .5rem;
+}
+
+.service__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.service__card {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.service__card span {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    color: #12ac8e;
+    background-color: #e9f7f7;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.service__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+.service__card p {
+    margin-bottom: 1rem;
+    color: #767268;
+}
+
+.service__card a {
+    color: #12ac8e;
+}
+
+.service__card a:hover {
+    color: #12ac8e;
+}
+
+.service__card:hover span {
+    color: #e9f7f7;
+    background-color: #12ac8e;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.about__content p {
+    margin-bottom: 1rem;
+    color: #767268;
+}
+
+.about__image img {
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.doctors__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.doctors__header__content p {
+    max-width: 600px;
+    color: #767268;
+}
+
+.doctors__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.doctors__card {
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: -1000;
+}
+
+.doctors__card__image {
+    position: relative;
+    overflow: hidden;
+}
+
+.doctors__card h4 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+.doctors__card p {
+    margin-bottom: 1rem;
+    color: #767268;
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+    border: 0.1rem solid #12ac8e;
+    padding: 2rem;
+}
+
+.contact .row form h3 {
+    font-size: 2rem;
+    color: #444;
+    padding-bottom: 1rem;
+}
+
+.contact .row form .box {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1.2rem 1.4rem;
+    border: .1rem solid #12ac8e;
+    margin: .7rem 0;
+}
+
+.contact .row form textarea {
+    height: 15rem;
+}
+
+@media (width < 900px) {
+    .service__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .about__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about__image {
+        grid-area: 1/1/2/2;
+    }
+    .about__content {
+        text-align: center;
+    }
+    .doctors__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .header-main {
+        padding: .5rem;
+    }
+    section {
+        padding: 8rem 2rem;
+    }
+}
+
+@media (width < 780px) {
+    #menu {
+        display: inline-block;
+    }
+    .header-main .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #12ac8e;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        border-top: .1rem solid rgba(0, 0, 0, 0.3);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header-main .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header-main .navbar a {
+        font-size: 1rem;
+        display: block;
+        margin: 2rem;
+    }
+    .header-main .logo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (width < 600px) {
+    .service__header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .service__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .doctors__header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .doctors__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

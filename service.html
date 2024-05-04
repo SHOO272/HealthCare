@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <title>HealthCare</title>
+    <style>
+        .video {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+        }
+        
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* Table Styles */
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        /* List Styles */
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-main">
+
+            <div id="menu" class="fas fa-bars"></div>
+
+            <a href="#" class="logo">HealthCare</a>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="service.html">Services</a>
+                <a href="group.html">Group</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <section class="section__container service__container">
+        <div class="service__header">
+            <div class="service__header__content">
+                <h2 class="section__header">Our Special service</h2>
+                <p>
+                    Beyond simply providing medical care, our commitment lies in delivering unparalleled service tailored to your unique needs.
+                </p>
+            </div>
+            <a href="contact.html"> <button class="service__btn">Ask A Service</button></a>
+        </div>
+        <div class="service__grid">
+            <div class="service__card">
+                <span><i class="ri-microscope-line"></i></span>
+                <h4>Laboratory Test</h4>
+                <p>
+                    Accurate Diagnostics, Swift Results: Experience top-notch Laboratory Testing at our facility.
+                </p>
+            </div>
+            <div class="service__card">
+                <span><i class="ri-mental-health-line"></i></span>
+                <h4>Health Check</h4>
+                <p>
+                    Our thorough assessments and expert evaluations help you stay proactive about your health.
+                </p>
+            </div>
+            <div class="service__card">
+                <span><i class="ri-hospital-line"></i></span>
+                <h4>General Dentistry</h4>
+                <p>
+                    Experience comprehensive oral care with Dentistry. Trust us to keep your smile healthy and bright.
+                </p>
+            </div>
+        </div>
+        <h2> Other Services</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Primary Care</td>
+                    <td>General healthcare services, routine check-ups, and preventive care.</td>
+                </tr>
+                <tr>
+                    <td>Specialty Care</td>
+                    <td>Specialized medical services for specific conditions or diseases.</td>
+                </tr>
+                <tr>
+                    <td>Diagnostic Imaging</td>
+                    <td>Advanced imaging techniques to diagnose and monitor medical conditions.</td>
+                </tr>
+                <tr>
+                    <td>Emergency Care</td>
+                    <td>Immediate medical attention for severe or life-threatening conditions.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Our Services Include:</h2>
+
+        <ul>
+            <li>Primary Care</li>
+            <li>Specialty Care</li>
+            <li>Diagnostic Imaging</li>
+            <li>Emergency Care</li>
+        </ul>
+        <div class="video">
+            <video src="Health.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+    <script src="js.js">
+    </script>
+</body>
+
+</html>
